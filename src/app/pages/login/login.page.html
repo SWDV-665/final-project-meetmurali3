@@ -1,0 +1,24 @@
+<ion-header>
+
+  <ion-toolbar color="primary">
+
+    <ion-title class="ion-text-left">Insurance Simplified</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="loginForm" (ngSubmit)="login()">
+    <div class="input-group">
+      <ion-item>
+        <ion-label position="floating">Username</ion-label>
+        <ion-input name="login" formControlName="login" type="login" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input formControlName="password" type="password" required></ion-input>
+      </ion-item>
+    </div>
+    <ion-button type="submit" expand="block" color="primary">Login</ion-button>
+  </form>
+</ion-content>
